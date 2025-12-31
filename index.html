@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' data: gap: content:">
     <title>Mi Navegador</title>
     <style>
         * { 
@@ -362,7 +361,7 @@
                         </div>
                     </div>
                     <div class="browser-frame">
-                        <iframe src="${this.currentUrl}" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-popups-to-escape-sandbox" allow="geolocation; microphone; camera"></iframe>
+                        <iframe src="${this.currentUrl}" allow="geolocation; microphone; camera"></iframe>
                     </div>
                     ${configPanel}
                     <div class="button-grid">
